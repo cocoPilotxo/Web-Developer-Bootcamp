@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>マラソン申し込みフォーム</h1>
+    <form action="/marathon">
+        <p>
+            <label for="first">姓</label>
+            <input type="text" id="first" name="first" required>
+            <label for="last">名</label>
+            <input type="text" id="last" name="last" required>
+        </p>
+
+        <h4>参加するマラソンを選択：</h4>
+
+        <p>
+            <input type="radio" id="5km" name="marathon" value="5km">
+            <label for="5km">楽しく走ろう5km</label>
+            <br>
+            <input type="radio" id="half" name="marathon" value="ハーフマラソン">
+            <label for="half">ハーフマラソン</label>
+            <br>
+            <input type="radio" id="full" name="marathon" value="フルマラソン">
+            <label for="full">フルマラソン</label>
+            <br>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">パスワード</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <label for="age">参加する年代</label>
+            <select name="age" id="age">
+                <option value="-18">-18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </p>
+
+        <button type="submit">登録する</button>
+
+    </form>
+
+</body>
+
+</html>

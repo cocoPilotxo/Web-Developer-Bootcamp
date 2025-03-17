@@ -1,0 +1,27 @@
+HTML
+
+便利機能
+・コメントアウトするショートカット
+ctrl + /
+・スケルトンを出す方法
+!  + tab
+・行を下にコピーして改行
+Shift + Alt + 矢印
+
+・emmet
+input:radio
+で、<input type="radio" name="" id="">と出力できる
+
+・alt + クリック
+複数の箇所を選択でき、同時に入力することができる
+
+・HTMLエンティティ
+＞特殊文字を指定して出力できる
+
+・CSS　Reset
+＞ブラウザ間の細かい設定を整えてくれる（スタンダード様式みたいなもの）
+＞https://meyerweb.com/eric/tools/css/reset/
+
+
+・emmet
+ul>li*5　

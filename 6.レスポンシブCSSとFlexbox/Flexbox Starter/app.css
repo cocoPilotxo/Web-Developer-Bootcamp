@@ -1,0 +1,72 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #003049;
+
+    display: flex;
+    flex-direction: row;
+    /*flex-directionは主軸の向きを定義する*/
+    justify-content: center;
+    /*主軸に対してどのように要素を配置するか*/
+    /* flex-wrap: wrap; */
+    /*交差軸の向きを定義する*/
+    /* align-items: flex-end; */
+    /*交差軸に対してどのように要素を配置するか*/
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 500px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: purple;
+    flex: 1 2 300px;
+    border: 2px solid black;
+}
+
+main .maincontent {
+    background-color: cyan;
+    flex: 2 800px;
+}
+
+/*flex-basisは主軸に対して、要素の大きさが決まる。
+flex-directionがrowの場合は、widthと同様に、横幅が大きくなる。
+flex-directionがcolumnの場合は、heightと同様に、縦幅が大きくなる。*/
+
+/* div:nth-of-type(1) {
+    flex-shrink: 3;
+    幅を狭めていく
+} */
+
+/* div:nth-of-type(5) {
+    align-self: flex-start;
+    一つの要素に適用して、移動させる
+} */
+
+/* div:nth-of-type(1) {
+    flex-grow: 1;
+    余ったスペースを対象の要素に割り当てる、幅を広げていく
+} */

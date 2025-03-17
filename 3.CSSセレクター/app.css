@@ -1,0 +1,92 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #fdf0d5;
+}
+
+button {
+    font-size: 30px;
+    background-color: #669bbc;
+}
+
+#signup {
+    background-color: #003049;
+    color: #fdf0d5
+}
+
+h1,
+h2 {
+    color: #003049;
+}
+
+span {
+    color: #003049;
+}
+
+.sec a {
+    color: #003049;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.tag {
+    background-color: #c1121f;
+    color: #fdf0d5;
+    font-size: 16px;
+}
+
+footer a {
+    color: red;
+}
+
+h2+button {
+    font-size: 20px;
+    background-color: pink;
+}
+
+footer>a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: green;
+}
+
+a[href*=google] {
+    color: magenta;
+}
+
+.sec a:hover {
+    text-decoration: underline;
+}
+
+.sec button:active {
+    background-color: aqua;
+}
+
+.sec:nth-of-type(2n) {
+    background-color: #a3813c;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+::selection {
+    background-color: sandybrown;
+}
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+
+button {
+    background-color: magenta !important;
+}
