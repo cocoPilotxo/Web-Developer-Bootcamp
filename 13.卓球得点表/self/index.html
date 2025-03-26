@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卓球得点表</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="column is-one-third is-offset-one-third">
+        <div class="card"> 
+            <div class="card-image">
+                <figure class="image">
+                    <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1075&q=80" alt="pinpong">    
+                </figure>
+            </div>
+
+            <header class="card-header">
+                <p class="card-header-title" style="padding: 0.5rem;">卓球得点表</p>
+            </header>
+
+            <div class="card-content">
+                <div class="content">
+                    <h1 class="title is-2" id="score">0 対 0</h1>
+                    <p class="subtitle is-6">
+                        下のボタンを押して得点を管理しよう
+                    </p>
+                </div>
+                <div class="content is-flex">
+                    <h2 class="title is-4">
+                        何点先取？
+                    </h2>
+                    <div class="select is-rounded is-small">
+                        <select id="scoreLimit">
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <footer class="card-footer">
+                <button id="player1" class="card-footer-item button is-primary is-fullwidth">+1 プレイヤー1</button>
+                <button id="player2" class="card-footer-item button is-link is-fullwidth">+1 プレイヤー2</button>
+                <button id="reset" class="card-footer-item button is-danger is-fullwidth">リセット</button>
+            </footer>
+        
+        </div>    
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
